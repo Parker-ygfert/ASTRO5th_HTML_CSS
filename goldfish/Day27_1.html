@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .box-a {
+      width: 200px;
+      height: 200px;
+      display: inline-block;
+      background-color: #aaa;
+    }
+    .box-b {
+      width: 200px;
+      height: 200px;
+      display: inline-block;
+      background-color: #faa;
+    }
+    .product-title {
+      padding: 10px;
+      background-color: #000;
+      color: #fff;
+      cursor: pointer;
+    }
+    .content {
+      display: none;
+    }
+  </style>
+</head>
+<body>
+  
+  <div class="box-a">box-a</div>
+  <div class="box-b">box-b</div>
+  
+  <div class="product-title">產品介紹</div>
+  <div class="content">為此壓力就是生氣運輸此刻風情我來，其他的歡迎光臨媽媽，網路部落笑道認證行業今後危險統計玩家站長技術努力大門全面，迅速如果行情支持，流程不起無奈程式統計承擔我國魔法超過，在那裡關西花蓮好了凱文連載你好說法認為評論身份，房地產冠軍情緒圖形群發全身提示試題而已超市推薦，這樣一段時間，最新採取大概你就，一遍不必透明作用一級國務院令人醫藥提醒凱文，公共抓住整合手冊協議網際快車不良，能夠大門篇文章，有很多元。</div>
+  
+  <script src="js/jquery.min.js"></script>
+  <script>
+    $(document).ready(function() {
+      $(".box-a").dblclick(function() {
+        $(".box-b").toggle()
+      })
+      $(".product-title").click(function() {
+        $(".content").toggle()
+      })
+    })
+  </script>
+</body>
+</html>
