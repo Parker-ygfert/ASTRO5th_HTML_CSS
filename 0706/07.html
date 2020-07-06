@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
+    .box {
+      width: 1000px;
+      height: 800px;
+      margin: auto;
+      background-color: #ccc;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      align-items: flex-start;
+      /* align-items 控制彈性列「內」的物件 */
+      align-content: space-evenly;
+      /* align-content 控制「彈性列」的位置 */
+    }
+    .item {
+      width: 300px;
+      height: 200px;
+      font-size: 50px;
+      text-align: center;
+      line-height: 200px;
+    }
+    .item:nth-child(1) {
+      background-color: #cff;
+      height: 350px;  
+    }
+    .item:nth-child(2) {
+      background-color: #fcf;
+    }
+    .item:nth-child(3) {
+      background-color: #ffc;
+    }
+    .item:nth-child(4) {
+      background-color: #fcc;
+    }
+    .item:nth-child(5) {
+      background-color: #cfc;
+    }
+  </style>
+</head>
+<body>
+  <div class="box">
+    <div class="item">1</div>
+    <div class="item">2</div>
+    <div class="item">3</div>
+    <div class="item">4</div>
+    <div class="item">5</div>
+  </div>
+</body>
+</html>
