@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;700;900&display=swap" rel="stylesheet">
+  <!-- import 字型 -->
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      font-family: 'Noto Sans TC', sans-serif;
+      /* 設定字型 */
+    }
+    .banner {
+      width: 100%;
+      height: 100vh;
+      /* background-color: #aaa; */
+      background:
+        linear-gradient(115deg, #7bf 50%, transparent 50%) center center / 100% 100%,
+        /* 115deg 漸變軸 115度 */
+        /* 90deg 會切出垂直 layout */
+        /* 第一個顏色從 50% 開始漸變 */
+        /* 第二個顏色從 50% 開始漸變 */
+        /* 兩個數值設定一樣就不會有漸變效果 */
+        /* 第一個 center 左右置中 */
+        /* 第二個 center 上下置中 */
+        /**
+        * ? 兩個 100% 應該是設定 repeat 
+        **/
+        url("https://picsum.photos/1200/600/?random=1") right center / auto 100%;
+    }
+    .container {
+      /* width: 100%;
+      max-width: 1200px;
+      RWD 設定 */
+      width: 1200px;
+      height: 100%;
+      margin: auto;
+      /* 測試用 BGC */
+      /* background-color: #888; */
+    }
+    .banner-txt {
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-start;
+    }
+    .banner-txt h1 {
+      font-size: 80px;
+      font-weight: 900;
+      border-bottom: 1px solid #333;
+      /* border 這邊會變成滿版是因為設定了 flex，主軸設定成 column，交叉軸預設會整個填滿 */
+      padding-bottom: 0.3em;
+      margin-bottom: 0.3em;
+    }
+    .banner-txt h1 small {
+      display: block;
+      font-size: 53px;
+      font-weight: 700;
+    }
+    .banner-txt h2 {
+      font-size: 50px;
+      font-weight: 700;
+    }
+    .banner-txt p {
+      font-size: 20px;
+      font-weight: 300;
+    }
+
+  </style>
+</head>
+<body>
+  <div class="banner">
+    <div class="container">
+      <div class="banner-txt">
+        <h1>金魚都能懂的
+          <small>這個網頁畫面怎麼切</small>
+        </h1>
+        <h2>圖文滿版區塊</h2>
+        <p>
+          這畫面實在常見，在各種樣板網站可說是設計常客
+          <br>
+          金魚切不出來實在說不過去啊
+        </p>
+      </div>
+    </div>
+  </div>
+  
+</body>
+</html>
