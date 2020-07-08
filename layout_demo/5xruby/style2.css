@@ -1,0 +1,144 @@
+a {
+  text-decoration: none;
+}
+header {
+  padding: 20px 20px 20px 30px;
+  /* position: fixed; */
+  /* background-color: #aaa; */
+}
+header .header-container {
+  display: flex;
+  justify-content: space-between;
+  /* border: 1px solid red; */
+}
+header .logo {
+  font-size: 16px;
+  line-height: 24px;
+  /* border: 1px solid red; */
+  align-self: center;
+}
+header .logo img {
+  width: 90px;
+  height: 24px;
+  vertical-align: bottom;
+}
+header .logo span {
+  color: #d90845;
+}
+header nav ul {
+  font-size: 0;
+}
+header nav li {
+  height: 24px;
+  display: inline-block;
+  margin: 0 10px;
+  /* background-color: #fa0; */
+}
+header nav a {
+  color: #333;
+  font-size: 16px;
+  line-height: 24px;
+  font-style: bold;
+}
+header nav a:hover {
+  color: #d90845;
+}
+
+
+
+.banner img {
+  width: 100%;
+  vertical-align: bottom;
+}
+
+
+
+.about {
+  padding: 50px 0;
+  background-color: #eee;
+}
+.about-container {
+  width: 1200px;
+  margin: auto;
+}
+.about h2 {
+  font-size: 24px;
+  color: #444;
+  text-align: center;
+}
+.about h2::after {
+  content: '';
+  display: block;
+  width: 80px;
+  height: 3px;
+  background-color: #d90845;
+  margin: 20px auto 50px;
+}
+.about .item-group {
+  display: flex;
+}
+.about .item {
+  width: 240px;
+  margin: 0 30px;
+  text-align: center;
+  box-sizing: border-box;
+  color: #444;
+}
+.about .item h3 {
+  font-size: 24px;
+  margin: 20px 0;
+}
+
+
+
+.lesson {
+  padding: 50px 0;
+  background-color: #ffa;
+}
+.lesson-container {
+  width: 1200px;
+  margin: auto;
+}
+.lesson h2 {
+  font-size: 24px;
+  color: #444;
+  text-align: center;
+}
+.lesson h2::after {
+  content: '';
+  display: block;
+  width: 80px;
+  height: 3px;
+  background-color: #d90845;
+  margin: 20px auto 50px;
+}
+.lesson .item-group {
+  display: flex;
+}
+.lesson .item {
+  width: 340px;
+  height: 450px;
+  margin: 0 30px;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+.lesson .item img {
+  width: 100%;
+  height: 250px;
+  vertical-align: bottom;
+}
+.lesson .item-text {
+  padding: 10px;
+}
+.lesson .item .enroll {
+  width: 60px;
+  background-color: #d90845;
+  color: #fff;
+  font-size: 12px;
+  padding: 5px;
+  border-radius: 5px;
+}
+.lesson .item h3 {
+  color: #555;
+  font-size: 18px;
+}
