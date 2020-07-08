@@ -4,6 +4,7 @@ a {
 header {
   padding: 20px 20px 20px 30px;
   /* position: fixed; */
+  /* ! 忘記加上 fixed，可是補上後版面會跑掉，先留著晚點處理 */
   /* background-color: #aaa; */
 }
 header .header-container {
@@ -21,6 +22,8 @@ header .logo img {
   width: 90px;
   height: 24px;
   vertical-align: bottom;
+  /* .logo 的 img 和 span 高度不一致 */
+  /* * middle 改成 bottom 高度一致了 */
 }
 header .logo span {
   color: #d90845;
@@ -49,6 +52,7 @@ header nav a:hover {
 .banner img {
   width: 100%;
   vertical-align: bottom;
+  /* * 圖片跟下面 .about 有一點點空隙，一樣用 bottom 解決 */
 }
 
 
@@ -64,6 +68,8 @@ header nav a:hover {
 .about h2 {
   font-size: 24px;
   color: #444;
+  /* margin: auto; */
+  /* * margin: auto 沒辦法置中，因為 block 物件寬度預設 100% */
   text-align: center;
 }
 .about h2::after {
@@ -71,6 +77,8 @@ header nav a:hover {
   display: block;
   width: 80px;
   height: 3px;
+  /* color: red; */
+  /* * 設定 color 沒反應，因為並沒有文字內容 */
   background-color: #d90845;
   margin: 20px auto 50px;
 }
@@ -141,4 +149,32 @@ header nav a:hover {
 .lesson .item h3 {
   color: #555;
   font-size: 18px;
+  padding: 10px 0 20px;
 }
+.lesson .item p {
+  font-size: 14px;
+  color: #888;
+  /* padding: 10px 0; */
+  /* * .lesson-time 的 p 一直無法跟 span 對齊上方，後來發現原來有加 padding */
+}
+.lesson .item-text p.teacher {
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 10px;
+}
+.lesson .item-text .lesson-time {
+  margin-top: 15px;
+  display: flex;
+  border: 1px solid red;
+}
+.lesson .lesson-time span {
+  margin-left: 15px;
+  padding: 5px;
+  /* line-height: 18px; */
+  /* * 忘記有加 padding 一直對 line-height 做設定但都沒效果 */
+  font-size: 14px;
+  color: #555;
+  background-color: #ddd;
+  border-radius: 5px;
+}
+
+/* 07/08(三) 20:41 */
