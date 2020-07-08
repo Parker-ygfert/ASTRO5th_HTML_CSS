@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
+    .full-screen {
+      background-color: #ccc;
+      height: 500px;
+    }
+    .wrap {
+      width: 1200px;
+      margin: auto;
+      height: 100%;
+      padding: 30px 0;
+    }
+    .list-group {
+      font-size: 0;
+    }
+    .title {
+      /* margin: auto; */
+    }
+    .title h2 {
+      font-size: 38px;
+      text-align: center;
+    }
+    .title h2::after {
+      content: "";
+      display: block;
+      width: 100px;
+      height: 4px;
+      background-color: red;
+      margin: 30px auto;
+    }
+    .item {
+      width: 270px;
+      margin: 15px;
+      display: inline-block;
+      text-align: center;
+      /* box-sizing: border-box; */
+      /* border: 1px solid red; */
+    }
+    .item h3 {
+      font-size: 30px;
+    }
+    .item p {
+      font-size: 20px;
+    }
+  </style>
+</head>
+<body>
+  
+  <div class="full-screen">
+    <div class="wrap">
+      <div class="title">
+        <h2>關於五倍紅寶石 About 5xRuby</h2>
+      </div>
+
+      <div class="list-group">
+        <div class="item">
+          <img src="https://picsum.photos/160/160/?random=1">
+          <h3>TITLE</h3>
+          <p>經典風情都能監督當天，情節他還，心理適。</p>
+        </div>
+        <div class="item">
+          <img src="https://picsum.photos/160/160/?random=1">
+          <h3>TITLE</h3>
+          <p>雙手出口，集中認為欄目，交給堅決，白色。</p>
+        </div>
+        <div class="item">
+          <img src="https://picsum.photos/160/160/?random=1">
+          <h3>TITLE</h3>
+          <p>雙手出口，集中認為欄目，交給堅決，白色。</p>
+        </div>
+        <div class="item">
+          <img src="https://picsum.photos/160/160/?random=1">
+          <h3>TITLE</h3>
+          <p>雙手出口，集中認為欄目，交給堅決，白色。</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+</body>
+</html>
