@@ -101,7 +101,7 @@ header nav a:hover {
 
 .lesson {
   padding: 50px 0;
-  background-color: #ffa;
+  /* background-color: #ffa; */
 }
 .lesson-container {
   width: 1200px;
@@ -149,7 +149,9 @@ header nav a:hover {
 .lesson .item h3 {
   color: #555;
   font-size: 18px;
-  padding: 10px 0 20px;
+  line-height: 24px;
+  height: 80px;
+  padding-top: 10px;
 }
 .lesson .item p {
   font-size: 14px;
@@ -164,11 +166,11 @@ header nav a:hover {
 .lesson .item-text .lesson-time {
   margin-top: 15px;
   display: flex;
-  border: 1px solid red;
+  /* border: 1px solid red; */
 }
 .lesson .lesson-time span {
   margin-left: 15px;
-  padding: 5px;
+  padding: 5px 8px;
   /* line-height: 18px; */
   /* * 忘記有加 padding 一直對 line-height 做設定但都沒效果 */
   font-size: 14px;
@@ -176,5 +178,73 @@ header nav a:hover {
   background-color: #ddd;
   border-radius: 5px;
 }
+.lesson .more {
+  background-color: #d90845;
+  width: 230px;
+  height: 60px;
+  line-height: 60px;
+  color: #fff;
+  text-align: center;
+  border-radius: 5px;
+  margin: 75px auto 20px;
+}
+/* TODO: 課程特效 */
 
-/* 07/08(三) 20:41 */
+
+
+.avatar {
+  background-color: #eee;
+}
+.avatar-container {
+  width: 1200px;
+  margin: auto;
+  padding: 50px 0 30px;
+}
+.avatar h2 {
+  font-size: 24px;
+  color: #444;
+  text-align: center;
+}
+.avatar h2::after {
+  content: '';
+  display: block;
+  width: 80px;
+  height: 3px;
+  background-color: #d90845;
+  margin: 20px auto 40px;
+}
+.avatar .item-group {
+  width: 760px;
+  height: 150px;
+  margin: auto;
+  display: flex;
+  justify-content: space-around;
+}
+.avatar .pic img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+.avatar .text {
+  width: 600px;
+  color: #555;
+  font-size: 16px;
+  line-height: 24px;
+}
+.avatar .text .content {
+  height: 60px;
+}
+.avatar .text .avatar-name {
+  color: #d90845;
+  font-size: 24px;
+  height: 30px;
+}
+.avatar .text span {
+  color: #888;
+}
+
+
+
+.contact {
+  background-color: #ffa;
+}
