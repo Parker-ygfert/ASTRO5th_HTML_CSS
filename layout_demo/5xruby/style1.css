@@ -1,0 +1,35 @@
+a {
+  text-decoration: none;
+}
+header {
+  background-color: #aaa;
+}
+header .header-container {
+  padding: 20px 40px;
+  display: flex;
+  justify-content: space-between;
+}
+header .logo {
+  font-size: 16px;
+  line-height: 24px;
+  border: 1px solid red;
+  align-self: center;
+}
+header .logo img {
+  width: 100px;
+  height: 24px;
+  vertical-align: middle;
+  /* ! .logo 的 img 和 span 高度不一致 */
+  border: 1px solid red;
+}
+header .logo span {
+  color: #f35;
+}
+header nav ul {
+  font-size: 0;
+}
+header nav li {
+  display: inline-block;
+  background-color: #fa0;
+  font-size: 16px;
+}
