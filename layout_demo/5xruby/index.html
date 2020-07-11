@@ -6,7 +6,9 @@
   <title>五倍紅寶石｜專業程式教育機構｜實戰轉職訓練</title>
   <link rel="stylesheet" href="reset.css">
   <!-- <link rel="stylesheet" href="style1.css"> -->
-  <link rel="stylesheet" href="style2.css">
+  <!-- <link rel="stylesheet" href="style2.css"> -->
+  <!-- <link rel="stylesheet" href="style3.css"> -->
+  <link rel="stylesheet" href="style4.css">
 </head>
 <body>
   
@@ -15,16 +17,18 @@
       <div class="header-icon">
         <div class="logo">
           <a href="#">
-            <img src="images/logo-c473f739.png">
-            <span>專業程式教育機構</span>
+            <div class="pic">
+              <img src="images/logo-c473f739.png">
+            </div>
+            <p>專業程式教育機構</p>
           </a>
         </div>
       </div>
       <nav>
           <ul>
-            <li><a href="#">線上課程</a></li>
-            <li><a href="#">ASTRO Camp</a></li>
-            <li><a href="#">全方位課程</a></li>
+            <li><a href="#"> 線上課程</a></li>
+            <li><a href="#"> ASTRO Camp</a></li>
+            <li><a href="#"> 全方位課程</a></li>
             <li><a href="#">短期課程</a></li>
             <li><a href="#">專案開發</a></li>
             <li><a href="#">專欄文章</a></li>
@@ -36,6 +40,7 @@
   </header>
 
   <div class="banner">
+    <div class="space"></div>
     <img src="banner_astro-a839be5c.jpg">
   </div>
 
@@ -142,9 +147,11 @@
           </div>
         </a>
       </div>
-      <div class="more">
-        <div>看更多網頁課程</div>
-      </div>
+      <a href="#">
+        <div class="more">
+          <div>看更多網頁課程</div>
+        </div>
+      </a>
     </div>
   </div>
 
@@ -174,12 +181,19 @@
         <h2>想更暸解我們嗎？</h2>
       </div>
       <div class="contact-txt">
-        <p>您可以看看常見問題或者直接線上洽詢，會有親切的客服人員回答您的問題，
-          也可以透過社群網站隨時關注我們的動態。</p>
+        <p>
+          您可以看看<a href="#">常見問題</a>或者直接<a href="#">線上洽詢</a>，會有親切的客服人員回答您的問題，
+          <br>
+          也可以透過社群網站隨時關注我們的動態。
+        </p>
       </div>
-      <div class="social">
-        <img src="https://picsum.photos/100/100/?random=1">
-        <img src="https://picsum.photos/100/100/?random=1">
+      <div class="fb-tw">
+        <a href="#">
+          <img src="images/icon-fb-2f24e7a0.png">
+        </a>
+        <a href="#">
+          <img src="images/icon-twitter-89f8d087.png">
+        </a>
       </div>
     </div>
   </div>
@@ -189,10 +203,12 @@
     <div class="footer-container">
       <div class="footer-group">
         <div class="footer-about">
-          <img src="https://picsum.photos/200/100/?random=1">
-          <p>02-2331-5247</p>
-          <p>hi@5xruby.tw</p>
-          <p>10046 台北市中正區衡陽路 7 號 5 樓</p>
+          <div class="pic">
+            <img src="images/5xruby-c62e5f70.svg">
+          </div>
+          <p> 02-2331-5247</p>
+          <p> hi@5xruby.tw</p>
+          <p> 10046 台北市中正區衡陽路 7 號 5 樓</p>
         </div>
         <div class="item-group">
           <div class="item">
@@ -237,13 +253,13 @@
               <li><a href="#">服務條款</a></li>
             </ul>
           </div>
-          <div class="item">
+          <div class="item social">
             <h4>追蹤</h4>
             <ul>
-              <li><a href="#">Facebook</a></li>
-              <li><a href="#">GitHub</a></li>
-              <li><a href="#">Line@</a></li>
-              <li><a href="#">Twitter</a></li>
+              <li><a href="#"> Facebook</a></li>
+              <li><a href="#"> GitHub</a></li>
+              <li><a href="#"> Line@</a></li>
+              <li><a href="#"> Twitter</a></li>
             </ul>
           </div>
         </div>
@@ -253,6 +269,36 @@
       </div>
     </div>
   </div>
+
   
+
+  <div class="sticky">
+    <div class="chat">
+      <a href="#"><img src="images/Chat-128.png" alt=""></a>
+    </div>
+    <div class="top">
+      <a href="#"><img src="images/018_239_arrow_up_hide-256.png" alt=""></a>
+    </div>
+  </div>
+  
+
+
+  <div class="time">
+    <div class="content">
+      總共耗時：約 6 小時
+      <a href="#"><div class="btn-close">X</div></a>
+    </div>
+  </div>
+  
+  
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script>
+    $(document).ready(function() {
+      $(".btn-close").click(function() {
+        $(".time").hide();
+      });
+    });
+  </script>
+
 </body>
 </html>

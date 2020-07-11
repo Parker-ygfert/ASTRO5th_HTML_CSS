@@ -1,15 +1,22 @@
 a {
   text-decoration: none;
 }
+
+
 header {
   padding: 20px 20px 20px 30px;
-  /* position: fixed; */
-  /* ! 忘記加上 fixed，可是補上後版面會跑掉，先留著晚點處理 */
-  /* background-color: #aaa; */
+  /* * 補上 fixed 設定 */
+  position: fixed;
+  width: 100%;
+  height: 60px;
+  margin: auto 0;
+  background-color: #fff;
 }
 header .header-container {
   display: flex;
   justify-content: space-between;
+  /* * 不知道為什麼右邊那一欄會跑到畫面外，先加上 padding 讓他回來 */
+  padding-right: 50px;
   /* border: 1px solid red; */
 }
 header .logo {
@@ -43,12 +50,48 @@ header nav a {
   line-height: 24px;
   font-style: bold;
 }
+header nav li:nth-child(1)::before {
+  content: url("images/app-21-diamond-128.png");
+  vertical-align: bottom;
+  /* background-color: #fa0; */
+}
+header nav li:nth-child(2)::before {
+  content: url("images/TWalsh__navigate_explore-128.png");
+  vertical-align: bottom;
+}
+header nav li:nth-child(3)::before {
+  content: url("images/weather-02-128.png");
+  vertical-align: bottom;
+}
+header nav li:nth-child(3)::after {
+  content: url("images/new-301d86be.svg");
+  animation: bouncing 0.8s linear infinite;
+  position: relative;
+}
 header nav a:hover {
   color: #d90845;
 }
 
+@keyframes bouncing {
+  0% {
+    /* transform: translateY(0); */
+    /* * 用 transform 更改 Y 軸設定沒有反應，改成直接用 position 設定 */
+    top: 0;
+  }
+  50% {
+    /* transform: translateY(-5px); */
+    top: -5px;
+  }
+  100% {
+    /* transform: translateY(0); */
+    top: 0;
+  }
+}
 
 
+.banner .space {
+  height: 60px;
+}
 .banner img {
   width: 100%;
   vertical-align: bottom;
@@ -129,6 +172,7 @@ header nav a:hover {
   margin: 0 30px;
   border: 1px solid #ccc;
   box-sizing: border-box;
+  transition: 0.3s;
 }
 .lesson .item img {
   width: 100%;
@@ -187,8 +231,16 @@ header nav a:hover {
   text-align: center;
   border-radius: 5px;
   margin: 75px auto 20px;
+  transition: 0.5s;
 }
-/* TODO: 課程特效 */
+
+.lesson .item:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19);;
+}
+.lesson .more:hover {
+  background-color: #c00845;
+}
 
 
 
@@ -323,6 +375,19 @@ header nav a:hover {
 .footer .footer-about p {
   margin: 15px 0;
 }
+.footer .footer-about p:nth-child(2)::before {
+  /* background-color: #f00; */
+  content: url("images/phone-128.png");
+  vertical-align: bottom;
+}
+.footer .footer-about p:nth-child(3)::before {
+  content: url("images/email.png");
+  vertical-align: bottom;
+}
+.footer .footer-about p:nth-child(4)::before {
+  content: url("images/pin_maker-1.png");
+  vertical-align: bottom;
+}
 .footer .item-group {
   width: 65%;
   /* flex-grow: 3; */
@@ -344,6 +409,23 @@ header nav a:hover {
 .footer .item li a {
   color: #888;
 }
+.footer .social li:nth-child(1)::before {
+  /* background-color: #f00; */
+  content: url("images/iconfinder_Facebook_Button_174544.png");
+  vertical-align: middle;
+}
+.footer .social li:nth-child(2)::before {
+  content: url("images/iconfinder_social_media_social_media_logo_github_2993771.png");
+  vertical-align: middle;
+}
+.footer .social li:nth-child(3)::before {
+  content: url("images/iconfinder_5383_-_Line_1314194.png");
+  vertical-align: middle;
+}
+.footer .social li:nth-child(4)::before {
+  content: url("images/iconfinder_TWITTER_1217163.png");
+  vertical-align: middle;
+}
 
 .footer .copyright {
   border-top: 1px solid #ccc;
@@ -352,4 +434,59 @@ header nav a:hover {
   font-size: 13px;
   padding-top: 20px;
   margin: 0 30px;
+}
+
+
+
+.sticky .chat {
+  position: fixed;
+  bottom: 80px;
+  right: 20px;
+}
+.sticky .top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+}
+
+
+
+.time {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.time .content {
+  width: 50%;
+  height: 50%;
+  /* width: 600px; */
+  /* height: 400px; */
+  background-color: #000;
+  color: #fff;
+  text-align: center;
+  line-height: 400px;
+  font-size: 50px;
+  position: absolute;
+  top: 0px;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  margin: auto;
+  border-radius: 10px;
+}
+.time .btn-close {
+  width: 50px;
+  height: 50px;
+  background-color: #fa0;
+  color: #000;
+  position: absolute;
+  top: -5px;
+  right: -5px;
+  line-height: 1;
+  border-radius: 20%;
+  border: 5px solid #f50;
+  font-size: 40px;
 }
