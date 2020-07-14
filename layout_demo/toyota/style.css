@@ -92,6 +92,7 @@ section {
   font-weight: 500;
   display: inline-block;
   padding-bottom: 4px;
+  /* vertical-align: middle; */
   /* background-color: #00f; */
 }
 .item-text p::after {
@@ -100,10 +101,14 @@ section {
   height: 1px;
   width: 430px;
   /* line-height: 18px; */
+  /* margin: auto; */
   background-color: #b33;
   position: relative;
   top: -6px;
   left: 10px;
+  /* margin-bottom: 6px; */
+  /* margin-left: ; */
+  /* vertical-align: middle; */
 }
 .item-text h4 {
   background-color: #000;
