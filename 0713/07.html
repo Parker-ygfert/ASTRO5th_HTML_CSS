@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
+    .wrap {
+      width: 100%;
+      max-width: 1200px;
+      margin: auto;
+    }
+    .col {
+      padding: 0 10px;
+      box-sizing: border-box;
+      width: 100%;
+      margin: 10px 0;
+    }
+    .item {
+      /* width: 100%; */
+      /* width 可以不用設定，仔細思考這邊是 block 還是 inline */
+      height: 200px;
+      background-color: #fa0;
+      /* margin: 15px; */
+    }
+    @media screen and (min-width: 768px) {
+      .wrap {
+        display: flex;
+        flex-wrap: wrap;
+        /* 思考一下為什麼 flex 設定在這裡 */
+      }
+      .col {
+        width: 50%;
+      }
+      .item {
+        /* width: 45%; */
+        /* width: calc(100% / 2 - 30px); */
+        /* width: 46.09375%; */
+      }
+    }
+    @media screen and (min-width: 992px) {
+      .col {
+        width: 33.3333333333%;
+      }
+      .item {
+        /* width: 30%; */
+        /* width: calc(100% / 3 - 30px); */
+        /* width: 30.3091397849%; */
+      }
+    }
+    @media screen and (min-width: 1200px) {
+      .col {
+        width: 16.6666666667%;
+      }
+      .item {
+        /* width: 15%; */
+        /* width: calc(100% / 6 - 30px); */
+        /* width: 14.1666666667%; */
+      }
+    }
+  </style>
+</head>
+<body>
+  
+  <div class="wrap">
+    <div class="col">
+      <div class="item"></div>
+    </div>
+    <div class="col">
+      <div class="item"></div>
+    </div>
+    <div class="col">
+      <div class="item"></div>
+    </div>
+    <div class="col">
+      <div class="item"></div>
+    </div>
+    <div class="col">
+      <div class="item"></div>
+    </div>
+    <div class="col">
+      <div class="item"></div>
+    </div>
+  </div>
+  
+</body>
+</html>

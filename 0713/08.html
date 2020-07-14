@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
+    .wrap {
+      width: 100%;
+      max-width: 1000px;
+      margin: auto;
+      display: flex;
+    }
+    .col {
+      width: 16.6666666667%;
+      box-sizing: border-box;
+      /* 忘記寫 box-sizing 也不會壞掉的原因是？ */
+      /* 那什麼情況下會壞掉？ */
+      padding: 0 10px;
+    }
+    .item {
+      height: 200px;
+      background-color: #fa0;
+    }
+  </style>
+</head>
+<body>
+  
+  <div class="wrap">
+    <div class="col">
+      <div class="item"></div>
+    </div>
+    <div class="col">
+      <div class="item"></div>
+    </div>
+    <div class="col">
+      <div class="item"></div>
+    </div>
+    <div class="col">
+      <div class="item"></div>
+    </div>
+    <div class="col">
+      <div class="item"></div>
+    </div>
+    <div class="col">
+      <div class="item"></div>
+    </div>
+  </div>
+  
+</body>
+</html>
