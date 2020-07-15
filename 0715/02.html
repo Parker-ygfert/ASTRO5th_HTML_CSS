@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
+    .text {
+      width: 1000px;
+      margin: 50px auto;
+    }
+    /* .text p {
+      font-size: 16px;
+      background-color: transparent;
+      padding-left: 20px;
+      text-indent: -16px;
+    }
+    .text p::before {
+      content: '・';
+      color: #f00;
+    } */
+
+    .text p {
+      font-size: 16px;
+      background-color: transparent;
+      padding-left: 20px;
+      position: relative;
+    }
+    .text p::before {
+      content: '・';
+      color: #f00;
+      position: absolute;
+      left: 4px;
+    }
+    .text span:first-child {
+      display: block;
+      color: #f00;
+      display: flex;
+      align-items: center;
+    }
+    .text span:first-child::after {
+      content: '';
+      height: 2px;
+      background-color: #f00;
+      flex-grow: 1;
+      margin-left: 20px;
+    }
+  </style>
+</head>
+<body>
+  
+  <div class="text">
+    <span>合同前後完了也在球隊物</span>  
+    <h4>低重心設計</h4>
+    <p>都市產業包括頭銜監控相同效益，作為一個也會關於維修聲音不見數字詳細內容，光碟。都市產業包括頭銜監控相同效益，作為一個也會關於維修聲音不見數字詳細內容，光碟。</p>
+    <h4>低重心設計</h4>
+    <p>都市產業包括頭銜監控相同效益，作為一個也會關於維修聲音不見數字詳細內容，光碟。</p>
+    <h4>低重心設計</h4>
+    <p>都市產業包括頭銜監控相同效益，作為一個也會關於維修聲音不見數字詳細內容，光碟。</p>
+  </div>
+  
+</body>
+</html>

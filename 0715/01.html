@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
+    p {
+      background: rgba(201, 195, 130, 0.3);
+      /* height: 60px; */
+      font-size: 30px;
+      /* padding: 20px; */
+      vertical-align: middle;
+      line-height: 30px;
+      width: 80%;
+      margin-top: -15px;
+      display: flex;
+      align-items: center;
+    }
+    p::before {
+      content: "我是before ";
+      color: #f55;
+    }
+    p::after {
+      content: " 大大";
+      color: #55f;
+    }
+    p::after {
+      content: '';
+      height: 1px;
+      margin-left: 20px;
+      background-color: #55f;
+      flex-grow: 1;
+    }
+    .pic {
+      height: 200px;
+      background-color: #ccc;
+    }
+  </style>
+</head>
+<body>
+  
+  <div class="pic"></div>
+  <p>parker</p>
+
+  
+</body>
+</html>
