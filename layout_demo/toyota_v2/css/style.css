@@ -265,12 +265,14 @@ section {
     font-weight: 400;
   }
   .main-content p {
+    margin-top: 10px;
     font-size: 22px;
     font-weight: 100;
+    line-height: 1.5;
   }
   .main-content::before {
-    right: -120px;
-    top: 70px;
+    right: -70px;
+    /* top: 0px; */
   }
 
   .play-btn {
@@ -294,5 +296,116 @@ section {
     font-size: 21px;
     text-indent: -17px;
     padding-left: 30px;
+  }
+}
+
+
+
+@media screen and (min-width: 992px) {
+  .container {
+    max-width: 900px;
+    margin: auto;
+  }
+  .title-group {
+    position: relative;
+  }
+  .main-title h2 {
+    font-size: 50px;
+  }
+  .main-content {
+    width: 76%;
+    position: absolute;
+  }
+  .mv-group {
+    margin-top: 0;
+    position: relative;
+  }
+  .main-content::before {
+    display: none;
+  }
+  .play-btn {
+    max-width: 66px;
+    min-height: 40px;
+  }
+  .play-btn::before {
+      border-top: 12px solid transparent;
+      border-bottom: 12px solid transparent;
+      border-left: 26px solid #fff;
+  }
+  .row.text-row {
+    justify-content: flex-start;
+    margin-left: 30px;
+  }
+  .text {
+    margin-top: -5%;
+  }
+  .text span {
+    font-size: 20px;
+  }
+  .text h4 {
+    font-size: 18px;
+  }
+  .text p {
+    font-size: 16px;
+  }
+  .container > .row > .col-12 {
+    position: relative;
+  }
+  .container > .row > .col-12::before {
+    /* background-color: #afa; */
+    content: '';
+    width: 40%;
+    height: 35%;
+    background-color: #eee;
+    position: absolute;
+    top: 2rem;
+    right: 0;
+    z-index: -1;
+  }
+  section:nth-child(even) .title-group {
+    /* background-color: #afa; */
+    margin-left: auto;
+    margin-right: 0;
+  }
+  section:nth-child(even) .main-title {
+    flex-direction: row-reverse;
+  }
+  section:nth-child(even) .main-title p {
+    left: 46px;
+  }
+  section:nth-child(even) .main-title h2 {
+    margin-right: -70px;
+  }
+  section:nth-child(even) .mv-row .col-11.col-lg-9 {
+    margin-left: 0;
+    margin-right: auto;
+  }
+  section:nth-child(even) .mv-row .play-btn {
+    position: absolute;
+    left: -94%;
+  }
+  section:nth-child(even) .row.text-row .col-lg-10 {
+    margin-left: auto;
+  }
+  section:nth-child(even) > .container > .row > .col-12::before {
+    right: 35%;
+    top: 5rem;
+  } 
+}
+
+
+
+@media screen and (min-width: 1200px) {
+  .container {
+    max-width: 1000px;
+  }
+  .title-group .main-title {
+    width: 90%;
+  }
+  .main-content {
+    width: 69.2%;
+  }
+  .text {
+    margin-top: -4%;
   }
 }
