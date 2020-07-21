@@ -1,0 +1,228 @@
+/** 格線設定 */
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+}
+.container {
+  /* background-color: #faa; */
+  padding: 0 15px;
+  width: 100%;
+  max-width: 1000px;
+  margin: auto;
+  box-sizing: border-box;
+}
+.row {
+  margin: 0 -15px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  background-color: #fff;
+}
+
+[class^="col-"] {
+  padding: 0 15px;
+  box-sizing: border-box;
+  /* margin: 0 auto; */
+}
+
+.col-1  { width: 8.333333%;  }
+.col-2  { width: 16.666666%; }
+.col-3  { width: 25%;        }
+.col-4  { width: 33.333333%; }
+.col-5  { width: 41.666666%; }
+.col-6  { width: 50%;        }
+.col-7  { width: 58.333333%; }
+.col-8  { width: 66.666666%; }
+.col-9  { width: 75%;        }
+.col-10 { width: 83.333333%; }
+.col-11 { width: 91.666666%; }
+.col-12 { width: 100%;       }
+
+@media screen and (min-width: 768px) {
+  .col-md-1  { width: 8.333333%;  }
+  .col-md-2  { width: 16.666666%; }
+  .col-md-3  { width: 25%;        }
+  .col-md-4  { width: 33.333333%; }
+  .col-md-5  { width: 41.666666%; }
+  .col-md-6  { width: 50%;        }
+  .col-md-7  { width: 58.333333%; }
+  .col-md-8  { width: 66.666666%; }
+  .col-md-9  { width: 75%;        }
+  .col-md-10 { width: 83.333333%; }
+  .col-md-11 { width: 91.666666%; }
+  .col-md-12 { width: 100%;       }
+}
+
+@media screen and (min-width: 992px) {
+  .col-lg-1  { width: 8.333333%;  }
+  .col-lg-2  { width: 16.666666%; }
+  .col-lg-3  { width: 25%;        }
+  .col-lg-4  { width: 33.333333%; }
+  .col-lg-5  { width: 41.666666%; }
+  .col-lg-6  { width: 50%;        }
+  .col-lg-7  { width: 58.333333%; }
+  .col-lg-8  { width: 66.666666%; }
+  .col-lg-9  { width: 75%;        }
+  .col-lg-10 { width: 83.333333%; }
+  .col-lg-11 { width: 91.666666%; }
+  .col-lg-12 { width: 100%;       }
+}
+
+@media screen and (min-width: 1200px) {
+  .col-xl-1  { width: 8.333333%;  }
+  .col-xl-2  { width: 16.666666%; }
+  .col-xl-3  { width: 25%;        }
+  .col-xl-4  { width: 33.333333%; }
+  .col-xl-5  { width: 41.666666%; }
+  .col-xl-6  { width: 50%;        }
+  .col-xl-7  { width: 58.333333%; }
+  .col-xl-8  { width: 66.666666%; }
+  .col-xl-9  { width: 75%;        }
+  .col-xl-10 { width: 83.333333%; }
+  .col-xl-11 { width: 91.666666%; }
+  .col-xl-12 { width: 100%;       }
+}
+
+
+
+/** 手機設定 */
+.item-group + .item-group {
+  border-top: 1px solid #ddd;
+}
+.item-group:first-child + .item-group {
+  border-top: none;
+}
+.item {
+  margin-top: 50px;
+  padding-bottom: 20px;
+}
+.item .pic {
+}
+.item .pic img {
+  width: 100%;
+  height: 200px;
+  vertical-align: middle;
+}
+.item h3 {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  font-size: 21px;
+  text-align: justify;
+}
+.item p {
+  line-height: 1.6;
+  font-weight: 400;
+}
+.item a {
+  color: #333;
+}
+.item a:hover {
+  color: #000;
+}
+.info {
+  display: flex;
+  margin-top: 2rem;
+  align-items: center;
+}
+.info .pic {
+  width: 12%;
+  margin-right: 10px;
+}
+.info .pic img {
+  border-radius: 50%;
+  height: auto;
+}
+.info .user-info {
+  flex-grow: 1;
+}
+.user-info,
+.user-info a {
+  font-size: 12px;
+  font-weight: 300;
+}
+.user-info a.from {
+  color: #ff485a;
+  padding-left: 5px;
+}
+.user-info a.from:hover {
+  color: #ff485a;
+}
+.like i,
+.bookmark i {
+  font-size: 20px;
+  font-weight: 100;
+  color: #757575;
+}
+.like {
+  margin-right: 15px;
+}
+.like span {
+  font-size: 14px;
+  vertical-align: top;
+  color: #757575;
+}
+
+
+
+/** 平板直向設定 */
+@media screen and (min-width: 768px) {
+  .item-group + .item-group {
+    border-top: none;
+  }
+  .col-12:last-child {
+    margin-right: auto;
+  }
+  .col-12:first-child .pic img {
+    /* background-color: #afa; */
+    height: 400px;
+  }
+  .col-12:first-child .item .info .pic {
+    width: 6%;
+  }
+  .item .info .pic img {
+    height: auto;
+  }
+  .col-12:first-child .item h3 {
+    font-size: 24px;
+    margin-top: 0;
+  }
+  .item .text {
+    height: 168px;
+    overflow: hidden;
+  }
+}
+
+
+
+/** 平板橫向設定 */
+@media screen and (min-width: 992px) {
+  .col-lg-5 {
+    position: relative;
+  }
+  .col-lg-5 .info {
+    /* outline: 1px solid #faa; */
+    position: absolute;
+    bottom: 0;
+    width: 92%;
+  }
+  .col-12:first-child .item .info .pic {
+    width: 8%;
+  }
+  .item .text {
+    height: 173px;
+  }
+}
+
+
+
+/** PC 設定 */
+@media screen and (min-width: 1024px) {
+  .col-12:first-child .item .info .pic {
+    width: 10%;
+  }
+  .item .text {
+    height: 196px;
+  }
+}
