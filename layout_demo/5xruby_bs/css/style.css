@@ -1,0 +1,64 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none !important;
+  /* outline: 1px solid #faa; */
+}
+
+.carousel-indicators li {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  margin-left: 6px;
+  margin-right: 6px;
+  background-color: #fff;
+  opacity: 1;
+  border: 1px solid #fff;
+}
+section.avatar .carousel-indicators {
+  bottom: -40px;
+}
+section.avatar .carousel-indicators li {
+  width: 8px;
+  height: 8px;
+  background-color: #aaa;
+  border: none
+}
+.carousel-indicators li.active {
+  background-color: #d90845 !important;
+}
+
+section.about,
+section.avatar,
+footer {
+  background-color: #f7f7f7;
+}
+
+.main-title h3::after {
+  content: '';
+  display: block;
+  height: 3px;
+  width: 80px;
+  background-color: #d90845;
+  margin: auto;
+  margin-top: 20px;
+  margin-bottom: 50px;
+}
+section.know h3::after {
+  display: none;
+}
+
+.lesson .item .content-wrap {
+  transition: 0.3s;
+}
+.lesson .item .content-wrap:hover {
+  /* outline: 1px solid #fa0; */
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(100, 100, 100, 0.2);
+}
+.lesson-month.badge-light {
+  background-color: #e6e6e6;
+  font-size: 90%;
+  color: #666;
+}
