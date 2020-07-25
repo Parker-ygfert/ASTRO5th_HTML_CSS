@@ -9,45 +9,67 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
 
     <title>五倍紅寶石｜專業程式教育機構｜實戰轉職訓練</title>
+    <link rel="stylesheet" href="css/all.css">
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
 
-    <header>
-      <div class="header">
-        <div class="logo">
-          <div class="logo-pic"></div>
-          <p>專業程式教育機構</p>
+    <nav class="navbar container-fluid navbar-expand-lg navbar-light bg-white p-0 d-md-flex">
+      <!--! 下了 fixed 和背景白色之後卻有半透明效果 -->
+      <div class="header container-fluid d-flex justify-content-between shadow-sm position-fixed bg-white">
+        <div class="header-logo py-2 pl-3">
+          <a class="navbar-brand d-flex align-items-center" href="#">
+            <div class="logo-pic">
+              <img src="https://5xruby.tw/assets/images/shared/navbar/logo-c473f739.png" alt="">
+            </div>
+            <p class="my-auto ml-2 text-danger">專業程式教育機構</p>
+          </a>
         </div>
-        <div class="menu-btn"></div>
+        <button class="navbar-toggler position-relative" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
       </div>
-
-      <nav>
-        <ul>
-          <li>
-            <a href="#">線上課程</a>
+      
+      <!--! 使用 position: absolute  -->
+      <div class="collapse navbar-collapse position-absolute w-100 border-top" id="navbarTogglerDemo02">
+        <ul class="navbar-nav my-2 mt-lg-0 text-center">
+          <li class="nav-item pt-2">
+            <a class="nav-link text-muted" href="#">
+              <i class="far fa-gem"></i>
+              線上課程
+            </a>
           </li>
-          <li>
-            <a href="#">ASTRO Camp</a>
+          <li class="nav-item pt-2">
+            <a class="nav-link text-muted" href="#">
+              <i class="far fa-compass"></i>
+              ASTRO Camp
+            </a>
           </li>
-          <li>
-            <a href="#">全方位課程</a>
+          <li class="nav-item pt-2">
+            <a class="nav-link text-muted position-relative" href="#">
+              <i class="fas fa-bolt"></i>
+              全方位課程
+              <div class="bouncing d-inline">
+                <img src="https://5xruby.tw/assets/images/shared/navbar/new-301d86be.svg" alt="">
+              </div>
+            </a>
+            
           </li>
-          <li>
-            <a href="#">短期課程</a>
+          <li class="nav-item pt-2">
+            <a class="nav-link text-muted" href="#">短期課程</a>
           </li>
-          <li>
-            <a href="#">專案開發</a>
+          <li class="nav-item pt-2">
+            <a class="nav-link text-muted" href="#">專案開發</a>
           </li>
-          <li>
-            <a href="#">專欄文章</a>
+          <li class="nav-item pt-2">
+            <a class="nav-link text-muted" href="#">專欄文章</a>
           </li>
-          <li>
-            <a href="#">最新消息</a>
+          <li class="nav-item pt-2">
+            <a class="nav-link text-muted" href="#">最新消息</a>
           </li>
         </ul>
-      </nav>
-    </header>
+      </div>
+    </nav>
 
 
 
@@ -73,21 +95,21 @@
           <img src="https://5xruby.tw/assets/images/index/banner_5xruby-3d66d288.jpg" class="d-block w-100" alt="...">
         </div>
       </div>
-      <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+      <!-- <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
         <span class="sr-only">Previous</span>
-      </a>
-      <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+      </a> -->
+      <!-- <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
         <span class="carousel-control-next-icon" aria-hidden="true"></span>
         <span class="sr-only">Next</span>
-      </a>
+      </a> -->
     </div>
 
 
 
     <!--* about -->
     <section class="about">
-      <div class="container pt-5 pb-5">
+      <div class="container py-5">
         <div class="row">
           <div class="main-title col-12">
             <h3 class="text-center text-dark">關於五倍紅寶石 About 5xRuby</h3>
@@ -147,7 +169,7 @@
 
     <!--* lesson -->
     <section class="lesson">
-      <div class="container pt-5 pb-5">
+      <div class="container py-5">
         <div class="row">
           <div class="main-title col-12">
             <h3 class="text-center text-dark">熱門網頁設計課程推薦</h3>
@@ -212,7 +234,7 @@
         </div>
 
         <div class="row">
-          <div class="more-btn col-3 text-center mx-auto mt-5">
+          <div class="more-btn col text-center mx-auto mt-5">
             <a href="#" class="btn btn-danger h6 px-5 py-3">看更多網頁課程</a>
           </div>
         </div>
@@ -223,19 +245,26 @@
 
     <!--* avatar -->
     <section class="avatar">
-      <div class="container pt-5 pb-5">
+      <div class="container py-5">
         <div class="row">
           <div class="main-title col-12">
             <h3 class="text-center text-dark">網頁課程推薦</h3>
           </div>
         </div>
-    
-        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+        
+        <!--! indicator 點了沒反應 -->
+        <!--* 因為 id 名稱與上面 banner 衝突了 -->
+        <div id="carouselExampleIndicators2" class="carousel slide" data-ride="carousel">
           <ol class="carousel-indicators">
-            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+            <li data-target="#carouselExampleIndicators2" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselExampleIndicators2" data-slide-to="1"></li>
+            <li data-target="#carouselExampleIndicators2" data-slide-to="2"></li>
+            <li data-target="#carouselExampleIndicators2" data-slide-to="3"></li>
+            <li data-target="#carouselExampleIndicators2" data-slide-to="4"></li>
+            <li data-target="#carouselExampleIndicators2" data-slide-to="5"></li>
           </ol>
           <div class="carousel-inner">
+            <!--* 1st avatar -->
             <div class="carousel-item active">
               <div class="container pb-5">
                 <div class="row no-gutters">
@@ -243,33 +272,38 @@
                     <img src="https://5xruby.tw/assets/images/testimoney/avatar/victor-3ec52916.jpg" alt="" class="w-100 rounded-circle">
                   </div>
                   <div class="col-8 col-md-6 mr-auto pl-4">
-                    <span>Programmer 最有價值的是經驗值，「五倍紅寶石」的導師都是社群內數一數二的資深 Rubyist，由他們來帶領學員一探 Ruby 世界的神奇之處，實在是最佳選擇。</span>
-                    <p>Victor Lam</p>
-                    <small>連續創業家，自由工作者</small>
+                    <span class="text-dark">Programmer 最有價值的是經驗值，「五倍紅寶石」的導師都是社群內數一數二的資深 Rubyist，由他們來帶領學員一探 Ruby 世界的神奇之處，實在是最佳選擇。</span>
+                    <p class="text-danger h4 mt-3">Victor Lam</p>
+                    <small class="h6 text-black-50">連續創業家，自由工作者</small>
                   </div>
                 </div>
               </div>
             </div>
+            <!--* 2nd avatar -->
             <div class="carousel-item">
               <div class="container pb-5">
                 <div class="row no-gutters">
                   <div class="col-2 col-lg-1 col-xl-1 ml-auto">
-                    <img src="https://5xruby.tw/assets/images/testimoney/avatar/victor-3ec52916.jpg" alt="" class="w-100 rounded-circle">
+                    <img src="https://5xruby.tw/assets/images/testimoney/avatar/jason-e7e95cad.jpg" alt="" class="w-100 rounded-circle">
                   </div>
                   <div class="col-8 col-md-6 mr-auto pl-4">
-                    <span>Programmer 最有價值的是經驗值，「五倍紅寶石」的導師都是社群內數一數二的資深 Rubyist，由他們來帶領學員一探 Ruby 世界的神奇之處，實在是最佳選擇。</span>
-                    <p>Victor Lam</p>
-                    <small>連續創業家，自由工作者</small>
+                    <span class="text-dark">Eddie and his team are of the most dedicated Ruby evangelists I have ever come across. With their passion and professionalism, Ruby learners will leapfrog in their progress.</span>
+                    <p class="text-danger h4 mt-3">Jason Hsu</p>
+                    <small class="h6 text-black-50">founder of The Big Questions & TEDxTaipei</small>
                   </div>
                 </div>
               </div>
             </div>
+            <!--* 3rd avatar -->
+            <!--* 4th avatar -->
+            <!--* 5th avatar -->
+            <!--* 6th avatar -->
           </div>
-          <!-- <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+          <!-- <a class="carousel-control-prev" href="#carouselExampleIndicators2" role="button" data-slide="prev">
             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
             <span class="sr-only">Previous</span>
           </a> -->
-          <!-- <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+          <!-- <a class="carousel-control-next" href="#carouselExampleIndicators2" role="button" data-slide="next">
             <span class="carousel-control-next-icon" aria-hidden="true"></span>
             <span class="sr-only">Next</span>
           </a> -->
@@ -281,147 +315,161 @@
 
     <!--* know  -->
     <section class="know">
-      <div class="container pt-5 pb-5">
+      <div class="container py-5">
         <div class="row">
           <div class="main-title col-12">
-            <h3 class="text-center text-dark h4">想更暸解我們嗎？</h3>
+            <h3 class="text-center text-dark h4 mb-4">想更暸解我們嗎？</h3>
           </div>
           <div class="text col-12">
-            <p>
-              您可以看看<a href="#">常見問題</a>或者直接<a href="#">線上洽詢</a>，會有親切的客服人員回答您的問題，
+            <p class="text-center text-dark">
+              您可以看看<a href="#" class="text-danger">常見問題</a>或者直接<a href="#" class="text-danger">線上洽詢</a>，會有親切的客服人員回答您的問題，
               <br>
               也可以透過社群網站隨時關注我們的動態。
             </p>
           </div>
-          <div class="social-btn col-12">
-            <a href="#"></a>
-            <a href="#"></a>
+          <div class="social-btn col-12 text-center mt-3 mb-5">
+            <a href="#" class="mr-3">
+              <img src="https://5xruby.tw/assets/images/index/icon/icon-fb-2f24e7a0.png" alt="">
+            </a>
+            <a href="#" class="ml-3">
+              <img src="https://5xruby.tw/assets/images/index/icon/icon-twitter-89f8d087.png" alt="">
+            </a>
           </div>
         </div>
       </div>
     </section>
 
 
-
-    <footer>
+    <footer class="py-5">
       <div class="container">
         <div class="row">
+          <!--* footer-logo -->
           <div class="footer-logo col-12 col-md-4">
             <div class="footer-pic">
-              <img src="https://5xruby.tw/assets/images/shared/footer/5xruby-c62e5f70.svg" alt="">
+              <a href="#">
+                <img src="https://5xruby.tw/assets/images/shared/footer/5xruby-c62e5f70.svg" alt="">
+              </a>
             </div>
-            <ul>
-              <li>
-                <a href="#">02-2331-5247</a>
+            <ul class="text-black-50 mt-3">
+              <li class="mb-2">
+                <i class="fas fa-phone-alt"></i>
+                <a href="#" class="text-black-50 ml-1">02-2331-5247</a>
               </li>
-              <li>
-                <a href="#">hi@5xruby.tw</a>
+              <li class="mb-2">
+                <i class="fas fa-envelope"></i>
+                <a href="#" class="text-black-50 ml-1">hi@5xruby.tw</a>
               </li>
-              <li>
-                <a href="#">10046 台北市中正區衡陽路 7 號 5 樓</a>
+              <li class="mb-2">
+                <i class="loca fas fa-map-marker-alt"></i>
+                <a href="#" class="text-black-50 ml-1">10046 台北市中正區衡陽路 7 號 5 樓</a>
               </li>
             </ul>
           </div>
 
+          <!--* footer-link -->
           <div class="footer-link col-12 col-md-8">
             <div class="row">
               <div class="link-item col-6 col-md-2">
-                <p>我們的課程</p>
+                <p class="h6 mb-3">我們的課程</p>
                 <ul>
-                  <li>
-                    <a href="#">ASTRO Camp</a>
+                  <li class="mb-1">
+                    <a href="#" class="text-black-50">ASTRO Camp</a>
                   </li>
-                  <li>
-                    <a href="#">線上課程</a>
+                  <li class="mb-1">
+                    <a href="#" class="text-black-50">線上課程</a>
                   </li>
-                  <li>
-                    <a href="#">全方位課程</a>
+                  <li class="mb-1">
+                    <a href="#" class="text-black-50">全方位課程</a>
                   </li>
-                  <li>
-                    <a href="#">短期課程</a>
+                  <li class="mb-1">
+                    <a href="#" class="text-black-50">短期課程</a>
                   </li>
                 </ul>
               </div>
               <div class="link-item col-6 col-md-2">
-                <p>服務項目</p>
+                <p class="h6 mb-3">服務項目</p>
                 <ul>
-                  <li>
-                    <a href="#">專案開發</a>
+                  <li class="mb-1">
+                    <a href="#" class="text-black-50">專案開發</a>
                   </li>
-                  <li>
-                    <a href="#">企業代訓</a>
+                  <li class="mb-1">
+                    <a href="#" class="text-black-50">企業代訓</a>
                   </li>
-                  <li>
-                    <a href="#">空間租借</a>
+                  <li class="mb-1">
+                    <a href="#" class="text-black-50">空間租借</a>
                   </li>
                 </ul>
               </div>
               <div class="link-item col-6 col-md-2">
-                <p>關於我們</p>
+                <p class="h6 mb-3">關於我們</p>
                 <ul>
-                  <li>
-                    <a href="#">關於我們</a>
+                  <li class="mb-1">
+                    <a href="#" class="text-black-50">關於我們</a>
                   </li>
-                  <li>
-                    <a href="#">媒體報導</a>
+                  <li class="mb-1">
+                    <a href="#" class="text-black-50">媒體報導</a>
                   </li>
-                  <li>
-                    <a href="#">團隊成員</a>
+                  <li class="mb-1">
+                    <a href="#" class="text-black-50">團隊成員</a>
                   </li>
-                  <li>
-                    <a href="#">專欄文章</a>
+                  <li class="mb-1">
+                    <a href="#" class="text-black-50">專欄文章</a>
                   </li>
-                  <li>
-                    <a href="#">最新消息</a>
+                  <li class="mb-1">
+                    <a href="#" class="text-black-50">最新消息</a>
                   </li>
                 </ul>
               </div>
               <div class="link-item col-6 col-md-2">
-                <p>聯絡我們</p>
+                <p class="h6 mb-3">聯絡我們</p>
                 <ul>
-                  <li>
-                    <a href="#">聯絡詢價</a>
+                  <li class="mb-1">
+                    <a href="#" class="text-black-50">聯絡詢價</a>
                   </li>
-                  <li>
-                    <a href="#">工作機會</a>
+                  <li class="mb-1">
+                    <a href="#" class="text-black-50">工作機會</a>
                   </li>
                 </ul>
               </div>
               <div class="link-item col-6 col-md-2">
-                <p>幫助與政策</p>
+                <p class="h6 mb-3">幫助與政策</p>
                 <ul>
-                  <li>
-                    <a href="#">常見問題</a>
+                  <li class="mb-1">
+                    <a href="#" class="text-black-50">常見問題</a>
                   </li>
-                  <li>
-                    <a href="#">隱私權政策</a>
+                  <li class="mb-1">
+                    <a href="#" class="text-black-50">隱私權政策</a>
                   </li>
-                  <li>
-                    <a href="#">服務條款</a>
+                  <li class="mb-1">
+                    <a href="#" class="text-black-50">服務條款</a>
                   </li>
                 </ul>
               </div>
               <div class="link-item col-6 col-md-2">
-                <p>追蹤</p>
-                <ul>
-                  <li>
-                    <a href="#">Facebook</a>
+                <p class="h6 mb-3">追蹤</p>
+                <ul class="text-black-50">
+                  <li class="mb-1">
+                    <i class="fab fa-facebook-square mr-2"></i>
+                    <a href="#" class="text-black-50">Facebook</a>
                   </li>
-                  <li>
-                    <a href="#">GitHub</a>
+                  <li class="mb-1">
+                    <i class="fab fa-github mr-2"></i>
+                    <a href="#" class="text-black-50">GitHub</a>
                   </li>
-                  <li>
-                    <a href="#">Line@</a>
+                  <li class="mb-1">
+                    <i class="fab fa-line mr-2"></i>
+                    <a href="#" class="text-black-50">Line@</a>
                   </li>
-                  <li>
-                    <a href="#">Twitter</a>
+                  <li class="mb-1">
+                    <i class="fab fa-twitter mr-2"></i>
+                    <a href="#" class="text-black-50">Twitter</a>
                   </li>
                 </ul>
               </div>
             </div>
           </div>
 
-          <div class="copyright col-12">
+          <div class="copyright col-12 mt-5 pt-3 border-top text-center text-black-50">
             &copy; 2014 - 2020 五倍紅寶石股份有限公司 (5XRUBY CO., LTD) | 台北市短期補習班立案 第 7594 號
           </div>
         </div>

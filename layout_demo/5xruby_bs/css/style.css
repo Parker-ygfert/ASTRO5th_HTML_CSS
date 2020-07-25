@@ -6,6 +6,98 @@
   /* outline: 1px solid #faa; */
 }
 
+
+
+body {
+  padding-top: 3.4rem;
+}
+
+nav .header {
+  z-index: 2;
+  top: 0;
+}
+
+nav .logo-pic {
+  width: 90px;
+  height: 25px;
+}
+nav .logo-pic img {
+  width: 100%;
+  height: 100%;
+  vertical-align: top;
+}
+nav .navbar-brand p {
+  font-size: 1rem;
+}
+
+nav button.navbar-toggler {
+  /* outline: 1px solid #faa; */
+  padding: 0.75rem 1rem;
+  border: none;
+  border-radius: 0px;
+  background-color: #dc3545;
+  border-color: #dc3545 !important;
+  color: #dc3545 !important;
+  /* margin-right: -1rem; */
+  /* margin-top: -0.5rem; */
+  /* margin-bottom: -0.5rem; */
+}
+nav .navbar.navbar-toggler:focus {
+  outline: 0px !important;
+}
+
+nav .navbar-toggler-icon {
+  background-image: none !important;
+}
+nav .navbar-toggler-icon::before {
+  content: '';
+  position: absolute;
+  height: 2px;
+  width: 50%;
+  background-color: #fff;
+  border-radius: 5px;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  box-shadow: 0 10px #fff, 0 -10px #fff;
+}
+
+nav .navbar-collapse {
+  background-color: #fff;
+  z-index: 100;
+  top: 0;
+  /* left: 0; */
+}
+/* nav ul li a {
+  outline: 1px solid #faa;
+} */
+nav ul li a:focus,
+nav ul li a:hover {
+  color: #dc3545 !important;
+}
+nav .bouncing {
+  animation: bouncing 1s linear infinite;
+  position: relative;
+  left: -2px;
+}
+nav .bouncing img {
+  width: 18px;
+}
+
+@keyframes bouncing {
+  0% {
+    top: -5px;
+  }
+  50% {
+    top: -10px;
+  }
+  100% {
+    top: -5px;
+  }
+}
+
 .carousel-indicators li {
   width: 10px;
   height: 10px;
@@ -49,6 +141,10 @@ section.know h3::after {
   display: none;
 }
 
+.text-dark {
+  color: #555 !important;
+}
+
 .lesson .item .content-wrap {
   transition: 0.3s;
 }
@@ -61,4 +157,48 @@ section.know h3::after {
   background-color: #e6e6e6;
   font-size: 90%;
   color: #666;
+}
+
+section.know .text p {
+  font-size: 18px;
+  line-height: 2;
+}
+
+footer .footer-pic img {
+  max-width: 140px;
+}
+footer li {
+  font-size: 14px;
+}
+footer i {
+  font-size: 18px;
+}
+.foot-log li:last-child i {
+  /* outline: 1px solid #faa; */
+  position: relative;
+  left: 1.5px;
+}
+.foot-logo li:last-child a {
+  padding-left: 3px;
+}
+
+.footer-link p {
+  font-size: 15px;
+}
+footer ul li a:focus,
+footer ul li a:hover {
+  color: #dc3545 !important;
+}
+
+.copyright {
+  font-size: 12px;
+}
+
+
+
+
+@media screen and (min-width: 992px) {
+  nav .navbar-collapse {
+    border-top: none !important;
+  }
 }
