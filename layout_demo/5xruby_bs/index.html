@@ -14,24 +14,22 @@
   </head>
   <body>
 
-    <nav class="navbar container-fluid navbar-expand-lg navbar-light bg-white p-0 d-md-flex">
-      <!--! 下了 fixed 和背景白色之後卻有半透明效果 -->
-      <div class="header container-fluid d-flex justify-content-between shadow-sm position-fixed bg-white">
-        <div class="header-logo py-2 pl-3">
-          <a class="navbar-brand d-flex align-items-center" href="#">
-            <div class="logo-pic">
-              <img src="https://5xruby.tw/assets/images/shared/navbar/logo-c473f739.png" alt="">
-            </div>
-            <p class="my-auto ml-2 text-danger">專業程式教育機構</p>
-          </a>
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top bg-white p-0 shadow-sm">
+      <!--! 下了 fixed 和背景白色之後卻沒有半透明效果 -->
+      <!-- <div class="header bg-white"> -->
+      <a class="navbar-brand d-flex align-items-center pl-3 py-2" href="#">
+        <div class="logo-pic">
+          <img src="https://5xruby.tw/assets/images/shared/navbar/logo-c473f739.png" alt="">
         </div>
-        <button class="navbar-toggler position-relative" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-      </div>
+        <p class="my-auto ml-2 text-danger">專業程式教育機構</p>
+      </a>
+      <button class="navbar-toggler position-relative" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <!-- </div> -->
       
       <!--! 使用 position: absolute  -->
-      <div class="collapse navbar-collapse position-absolute w-100 border-top" id="navbarTogglerDemo02">
+      <div class="collapse navbar-collapse border-top ml-lg-auto pr-lg-3" id="navbarTogglerDemo02">
         <ul class="navbar-nav my-2 mt-lg-0 text-center">
           <li class="nav-item pt-2">
             <a class="nav-link text-muted" href="#">
@@ -178,7 +176,7 @@
 
         <div class="row">
           <!--* Vue.js -->
-          <div class="item col-12 col-md-6 col-lg-4 d-flex">
+          <div class="item col-12 col-md-6 col-lg-4 d-flex mb-5">
             <div class="content-wrap border flex-grow-1 d-flex flex-column">
               <div class="lesson-pic">
                 <img src="https://5xruby.tw/assets/images/talks/cover/vue-js-61eaa1c7.jpg" alt="" class="w-100">
@@ -196,7 +194,7 @@
             </div>
           </div>
           <!--* HTML -->
-          <div class="item col-12 col-md-6 col-lg-4 d-flex">
+          <div class="item col-12 col-md-6 col-lg-4 d-flex mb-5">
             <div class="content-wrap border flex-grow-1 d-flex flex-column">
               <div class="lesson-pic">
                 <img src="https://5xruby.tw/assets/images/talks/cover/html-9a8e2291.jpg" alt="" class="w-100">
@@ -214,7 +212,7 @@
             </div>
           </div>
           <!--* ReactJS -->
-          <div class="item col-12 col-lg-4 d-md-none d-lg-block">
+          <div class="item col-12 col-lg-4 d-md-none d-lg-block mb-5">
             <div class="content-wrap border">
               <div class="lesson-pic">
                 <img src="https://5xruby.tw/assets/images/talks/cover/react-js-c77f3549.jpg" alt="" class="w-100">
@@ -234,7 +232,7 @@
         </div>
 
         <div class="row">
-          <div class="more-btn col text-center mx-auto mt-5">
+          <div class="more-btn col text-center mx-auto">
             <a href="#" class="btn btn-danger h6 px-5 py-3">看更多網頁課程</a>
           </div>
         </div>
@@ -245,7 +243,7 @@
 
     <!--* avatar -->
     <section class="avatar">
-      <div class="container py-5">
+      <div class="container pt-5 pb-3">
         <div class="row">
           <div class="main-title col-12">
             <h3 class="text-center text-dark">網頁課程推薦</h3>
@@ -267,11 +265,11 @@
             <!--* 1st avatar -->
             <div class="carousel-item active">
               <div class="container pb-5">
-                <div class="row no-gutters">
+                <div class="text-area row no-gutters">
                   <div class="col-2 col-lg-1 col-xl-1 ml-auto">
                     <img src="https://5xruby.tw/assets/images/testimoney/avatar/victor-3ec52916.jpg" alt="" class="w-100 rounded-circle">
                   </div>
-                  <div class="col-8 col-md-6 mr-auto pl-4">
+                  <div class="col-8 col-md-6 mr-auto pl-1 pl-md-4">
                     <span class="text-dark">Programmer 最有價值的是經驗值，「五倍紅寶石」的導師都是社群內數一數二的資深 Rubyist，由他們來帶領學員一探 Ruby 世界的神奇之處，實在是最佳選擇。</span>
                     <p class="text-danger h4 mt-3">Victor Lam</p>
                     <small class="h6 text-black-50">連續創業家，自由工作者</small>
@@ -282,11 +280,11 @@
             <!--* 2nd avatar -->
             <div class="carousel-item">
               <div class="container pb-5">
-                <div class="row no-gutters">
+                <div class="text-area row no-gutters">
                   <div class="col-2 col-lg-1 col-xl-1 ml-auto">
                     <img src="https://5xruby.tw/assets/images/testimoney/avatar/jason-e7e95cad.jpg" alt="" class="w-100 rounded-circle">
                   </div>
-                  <div class="col-8 col-md-6 mr-auto pl-4">
+                  <div class="col-8 col-md-6 mr-auto pl-1 pl-md-4">
                     <span class="text-dark">Eddie and his team are of the most dedicated Ruby evangelists I have ever come across. With their passion and professionalism, Ruby learners will leapfrog in their progress.</span>
                     <p class="text-danger h4 mt-3">Jason Hsu</p>
                     <small class="h6 text-black-50">founder of The Big Questions & TEDxTaipei</small>
@@ -295,9 +293,65 @@
               </div>
             </div>
             <!--* 3rd avatar -->
+            <div class="carousel-item">
+              <div class="container pb-5">
+                <div class="text-area row no-gutters">
+                  <div class="col-2 col-lg-1 col-xl-1 ml-auto">
+                    <img src="https://5xruby.tw/assets/images/testimoney/avatar/felix-d1d4db69.jpg" alt="" class="w-100 rounded-circle">
+                  </div>
+                  <div class="col-8 col-md-6 mr-auto pl-1 pl-md-4">
+                    <span class="text-dark">還在尋找專業的 Ruby/Rails 師資嗎？別懷疑了，台灣最頂尖的 Rubyist 盡在「五倍紅寶石」！</span>
+                    <p class="text-danger h4 mt-3">Felix Lin</p>
+                    <small class="h6 text-black-50">dappei.com 「搭配」網站創辦人</small>
+                  </div>
+                </div>
+              </div>
+            </div>
             <!--* 4th avatar -->
+            <div class="carousel-item">
+              <div class="container pb-5">
+                <div class="row no-gutters">
+                  <div class="text-area col-2 col-lg-1 col-xl-1 ml-auto">
+                    <img src="https://5xruby.tw/assets/images/testimoney/avatar/hana-4ae009cb.jpg" alt="" class="w-100 rounded-circle">
+                  </div>
+                  <div class="col-8 col-md-6 mr-auto pl-1 pl-md-4">
+                    <span class="text-dark">慕凡和龍哥是業界數一數二的 Ruby 大師，他們不光是底子深厚，也很懂得引導、訓練學習路上遇到挫折的 Ruby/Rails 學子。很慶幸有他們的協助讓我進入紅寶石的美妙世界。</span>
+                    <p class="text-danger h4 mt-3">Hana Chang</p>
+                    <small class="h6 text-black-50">Co-Founder and CEO of BountyHunter</small>
+                  </div>
+                </div>
+              </div>
+            </div>
             <!--* 5th avatar -->
+            <div class="carousel-item">
+              <div class="container pb-5">
+                <div class="row no-gutters">
+                  <div class="text-area col-2 col-lg-1 col-xl-1 ml-auto">
+                    <img src="https://5xruby.tw/assets/images/testimoney/avatar/johnsie-7322ca81.jpg" alt="" class="w-100 rounded-circle">
+                  </div>
+                  <div class="col-8 col-md-6 mr-auto pl-1 pl-md-4">
+                    <span class="text-dark">選擇程式語言很重要，但選擇優秀的導師更重要！能跟擁有多年 Ruby/Rails 實戰經驗、活躍於社群的頂尖 Rubyist 學習，將一窺程式開發殿堂之藝術！我堅信：專業事讓專業的來，而專業的「五倍紅寶石」是寶藏，就等大家來挖掘。</span>
+                    <p class="text-danger h4 mt-3">John Sie</p>
+                    <small class="h6 text-black-50">Accuvally Inc.共同創辦人暨營運長</small>
+                  </div>
+                </div>
+              </div>
+            </div>
             <!--* 6th avatar -->
+            <div class="carousel-item">
+              <div class="container pb-5">
+                <div class="row no-gutters">
+                  <div class="text-area col-2 col-lg-1 col-xl-1 ml-auto">
+                    <img src="https://5xruby.tw/assets/images/testimoney/avatar/benlin-54e253f4.jpg" alt="" class="w-100 rounded-circle">
+                  </div>
+                  <div class="col-8 col-md-6 mr-auto pl-1 pl-md-4">
+                    <span class="text-dark">「五倍紅寶石」的導師們都是業界經驗豐富的實戰高手，提供的課程及咨詢絕對能讓你大幅省去自行摸索的時間。</span>
+                    <p class="text-danger h4 mt-3">Ben Li</p>
+                    <small class="h6 text-black-50">連續創業家，自由工作者</small>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
           <!-- <a class="carousel-control-prev" href="#carouselExampleIndicators2" role="button" data-slide="prev">
             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -344,7 +398,7 @@
       <div class="container">
         <div class="row">
           <!--* footer-logo -->
-          <div class="footer-logo col-12 col-md-4">
+          <div class="footer-logo col-12 col-md-4 mb-4">
             <div class="footer-pic">
               <a href="#">
                 <img src="https://5xruby.tw/assets/images/shared/footer/5xruby-c62e5f70.svg" alt="">
@@ -369,7 +423,7 @@
           <!--* footer-link -->
           <div class="footer-link col-12 col-md-8">
             <div class="row">
-              <div class="link-item col-6 col-md-2">
+              <div class="link-item col-6 col-md-2 mb-3">
                 <p class="h6 mb-3">我們的課程</p>
                 <ul>
                   <li class="mb-1">
@@ -386,7 +440,7 @@
                   </li>
                 </ul>
               </div>
-              <div class="link-item col-6 col-md-2">
+              <div class="link-item col-6 col-md-2 mb-3">
                 <p class="h6 mb-3">服務項目</p>
                 <ul>
                   <li class="mb-1">
@@ -400,7 +454,7 @@
                   </li>
                 </ul>
               </div>
-              <div class="link-item col-6 col-md-2">
+              <div class="link-item col-6 col-md-2 mb-3">
                 <p class="h6 mb-3">關於我們</p>
                 <ul>
                   <li class="mb-1">
@@ -420,7 +474,7 @@
                   </li>
                 </ul>
               </div>
-              <div class="link-item col-6 col-md-2">
+              <div class="link-item col-6 col-md-2 mb-3">
                 <p class="h6 mb-3">聯絡我們</p>
                 <ul>
                   <li class="mb-1">
@@ -431,7 +485,7 @@
                   </li>
                 </ul>
               </div>
-              <div class="link-item col-6 col-md-2">
+              <div class="link-item col-6 col-md-2 mb-3">
                 <p class="h6 mb-3">幫助與政策</p>
                 <ul>
                   <li class="mb-1">
@@ -445,7 +499,7 @@
                   </li>
                 </ul>
               </div>
-              <div class="link-item col-6 col-md-2">
+              <div class="link-item col-6 col-md-2 mb-3">
                 <p class="h6 mb-3">追蹤</p>
                 <ul class="text-black-50">
                   <li class="mb-1">
