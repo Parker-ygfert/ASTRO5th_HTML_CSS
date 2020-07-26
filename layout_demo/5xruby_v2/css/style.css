@@ -5,6 +5,8 @@
 }
 
 /** 通用設定 */
+/*! 圖片不要全部都設定寬 100%，     */
+/*! 也許會遇到有些圖片不需要這個設定  */
 img {
   width: 100%;
   vertical-align: middle;
@@ -64,6 +66,7 @@ header a:hover {
 header .logo a {
   /* background-color: #0f0; */
   color: #d90845;
+  max-width: 226px;
   display: flex;
   align-items: center;
 }
@@ -103,6 +106,7 @@ header .menu-btn {
   position: absolute;
   top: 0;
   right: 0;
+  cursor: pointer;
 }
 header .menu-btn span {
   opacity: 0;
