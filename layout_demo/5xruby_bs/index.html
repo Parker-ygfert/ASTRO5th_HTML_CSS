@@ -14,12 +14,14 @@
   </head>
   <body>
 
+    <!--* Boostrap 有 fixed-top 可以直接套用 -->
     <nav class="navbar navbar-expand-lg navbar-light fixed-top bg-white p-0 shadow-sm">
-      <!--! 下了 fixed 和背景白色之後卻沒有半透明效果 -->
+      <!--! 下了 fixed 和背景白色之後卻出現半透明效果 -->
       <!-- <div class="header bg-white"> -->
+      <h1>五倍紅寶石｜專業程式教育機構｜實戰轉職訓練</h1>
       <a class="navbar-brand d-flex align-items-center pl-3 py-2" href="#">
         <div class="logo-pic">
-          <img src="https://5xruby.tw/assets/images/shared/navbar/logo-c473f739.png" alt="">
+          <img src="https://5xruby.tw/assets/images/shared/navbar/logo-c473f739.png" alt="五倍紅寶石｜專業程式教育機構｜實戰轉職訓練">
         </div>
         <p class="my-auto ml-2 text-danger">專業程式教育機構</p>
       </a>
@@ -29,6 +31,7 @@
       <!-- </div> -->
       
       <!--! 使用 position: absolute  -->
+      <!--* 使用 Bootstrap 預設的 fixed-top 不需額外設定 position: absolute -->
       <div class="collapse navbar-collapse border-top ml-lg-auto pr-lg-3" id="navbarTogglerDemo02">
         <ul class="navbar-nav my-2 mt-lg-0 text-center">
           <li class="nav-item pt-2">
@@ -406,15 +409,21 @@
             </div>
             <ul class="text-black-50 mt-3">
               <li class="mb-2">
-                <i class="fas fa-phone-alt"></i>
+                <div class="icon-font">
+                  <i class="fas fa-phone-alt"></i>
+                </div>
                 <a href="#" class="text-black-50 ml-1">02-2331-5247</a>
               </li>
               <li class="mb-2">
-                <i class="fas fa-envelope"></i>
+                <div class="icon-font">
+                  <i class="fas fa-envelope"></i>
+                </div>
                 <a href="#" class="text-black-50 ml-1">hi@5xruby.tw</a>
               </li>
               <li class="mb-2">
-                <i class="loca fas fa-map-marker-alt"></i>
+                <div class="icon-font">
+                  <i class="loca fas fa-map-marker-alt"></i>
+                </div>
                 <a href="#" class="text-black-50 ml-1">10046 台北市中正區衡陽路 7 號 5 樓</a>
               </li>
             </ul>
@@ -503,19 +512,27 @@
                 <p class="h6 mb-3">追蹤</p>
                 <ul class="text-black-50">
                   <li class="mb-1">
-                    <i class="fab fa-facebook-square mr-2"></i>
+                    <div class="icon-font">
+                      <i class="fab fa-facebook-square mr-2"></i>
+                    </div>
                     <a href="#" class="text-black-50">Facebook</a>
                   </li>
                   <li class="mb-1">
-                    <i class="fab fa-github mr-2"></i>
+                    <div class="icon-font">
+                      <i class="fab fa-github mr-2"></i>
+                    </div>
                     <a href="#" class="text-black-50">GitHub</a>
                   </li>
                   <li class="mb-1">
-                    <i class="fab fa-line mr-2"></i>
+                    <div class="icon-font">
+                      <i class="fab fa-line mr-2"></i>
+                    </div>
                     <a href="#" class="text-black-50">Line@</a>
                   </li>
                   <li class="mb-1">
-                    <i class="fab fa-twitter mr-2"></i>
+                    <div class="icon-font">
+                      <i class="fab fa-twitter mr-2"></i>
+                    </div>
                     <a href="#" class="text-black-50">Twitter</a>
                   </li>
                 </ul>
@@ -529,6 +546,17 @@
         </div>
       </div>
     </footer>
+
+
+
+    <div class="sticker">
+      <a href="#" class="msg d-block text-white text-center rounded-circle shadow-sm">
+        <i class="fab fa-facebook-messenger"></i>
+      </a>
+      <a href="#" class="to-top d-block border rounded-circle bg-white text-center shadow-sm">
+          <i class="fas fa-chevron-up"></i>
+      </a>
+    </div>
 
 
 
